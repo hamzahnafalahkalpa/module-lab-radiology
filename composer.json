@@ -3,7 +3,7 @@
     "description": "Module Master Lab dan Radiology",
     "type": "package",
     "require": {
-        "zahzah/laravel-support": "1.x",
+        "hanafalah/laravel-support": "1.x",
         "gilanggustina/module-treatment": "1.x"
     },
     "autoload": {

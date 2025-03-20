@@ -2,7 +2,7 @@
 
 namespace Gilanggustina\ModuleLabRadiology\Resources\Laboratorium\Sampling;
 
-use Zahzah\LaravelSupport\Resources\ApiResource;
+use Hanafalah\LaravelSupport\Resources\ApiResource;
 
 class ViewSampling extends ApiResource
 {
@@ -12,7 +12,7 @@ class ViewSampling extends ApiResource
      * @param  \Illuminate\Http\Request  $request
      * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
      */
-    public function toArray($request) :array
+    public function toArray($request): array
     {
         $arr = [
             'id' => $this->id,
@@ -20,7 +20,7 @@ class ViewSampling extends ApiResource
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
-        
+
         return $arr;
     }
 }

@@ -2,9 +2,6 @@
 
 namespace Gilanggustina\ModuleLabRadiology\Contracts;
 
-use Zahzah\LaravelSupport\Contracts\DataManagement;
+use Hanafalah\LaravelSupport\Contracts\DataManagement;
 
-interface ModuleLabRadiology extends DataManagement
-{
-  
-}
+interface ModuleLabRadiology extends DataManagement {}

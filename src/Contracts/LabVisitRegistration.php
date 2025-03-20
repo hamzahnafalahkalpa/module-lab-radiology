@@ -2,9 +2,6 @@
 
 namespace Gilanggustina\ModuleLabRadiology\Contracts;
 
-use Zahzah\ModulePatient\Contracts\VisitRegistration;
+use Hanafalah\ModulePatient\Contracts\VisitRegistration;
 
-interface LabVisitRegistration extends VisitRegistration
-{
-  
-}
+interface LabVisitRegistration extends VisitRegistration {}

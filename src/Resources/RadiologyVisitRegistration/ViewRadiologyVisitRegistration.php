@@ -2,7 +2,7 @@
 
 namespace Gilanggustina\ModuleLabRadiology\Resources\RadiologyVisitRegistration;
 
-use Zahzah\ModulePatient\Resources\VisitRegistration\ViewVisitRegistration;
+use Hanafalah\ModulePatient\Resources\VisitRegistration\ViewVisitRegistration;
 
 class ViewRadiologyVisitRegistration extends ViewVisitRegistration
 {
@@ -14,10 +14,9 @@ class ViewRadiologyVisitRegistration extends ViewVisitRegistration
      */
     public function toArray(\Illuminate\Http\Request $request): array
     {
-        $arr = [
-        ];
-        $arr = $this->mergeArray(parent::toArray($request),$arr);
-        
+        $arr = [];
+        $arr = $this->mergeArray(parent::toArray($request), $arr);
+
         return $arr;
     }
 }
