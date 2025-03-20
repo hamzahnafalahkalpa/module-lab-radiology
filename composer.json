@@ -1,0 +1,28 @@
+{
+    "name": "gilanggustina/module-lab-radiology",
+    "description": "Module Master Lab dan Radiology",
+    "type": "package",
+    "require": {
+        "zahzah/laravel-support": "1.x",
+        "gilanggustina/module-treatment": "1.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gilanggustina\\ModuleLabRadiology\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gilanggustina\\ModuleLabRadiology\\ModuleLabRadiologyServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Cahaya Gilang Gustina",
+            "email": "cgg01082000@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
