@@ -1,6 +1,6 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Resources\Radiology;
+namespace Hanafalah\ModuleLabRadiology\Resources\Radiology;
 
 use Hanafalah\LaravelSupport\Resources\ApiResource;
 

@@ -1,20 +1,20 @@
 {
-    "name": "gilanggustina/module-lab-radiology",
+    "name": "hanafalah/module-lab-radiology",
     "description": "Module Master Lab dan Radiology",
     "type": "package",
     "require": {
         "hanafalah/laravel-support": "1.x",
-        "gilanggustina/module-treatment": "1.x"
+        "hanafalah/module-treatment": "1.x"
     },
     "autoload": {
         "psr-4": {
-            "Gilanggustina\\ModuleLabRadiology\\": "src/"
+            "Hanafalah\\ModuleLabRadiology\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Gilanggustina\\ModuleLabRadiology\\ModuleLabRadiologyServiceProvider"
+                "Hanafalah\\ModuleLabRadiology\\ModuleLabRadiologyServiceProvider"
             ]
         }
     },

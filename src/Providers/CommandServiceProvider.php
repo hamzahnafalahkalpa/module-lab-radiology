@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Gilanggustina\ModuleLabRadiology\Providers;
+namespace Hanafalah\ModuleLabRadiology\Providers;
 
-use Gilanggustina\ModuleLabRadiology\Commands;
+use Hanafalah\ModuleLabRadiology\Commands;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider
@@ -14,8 +14,9 @@ class CommandServiceProvider extends ServiceProvider
     ];
 
 
-    public function register(){
-        $this->commands(config('module-lab-radiology.commands',$this->commands));
+    public function register()
+    {
+        $this->commands(config('module-lab-radiology.commands', $this->commands));
     }
     /**
      * Get the services provided by the provider.

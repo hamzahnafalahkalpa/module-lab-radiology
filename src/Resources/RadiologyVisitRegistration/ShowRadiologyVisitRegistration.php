@@ -1,6 +1,6 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Resources\RadiologyVisitRegistration;
+namespace Hanafalah\ModuleLabRadiology\Resources\RadiologyVisitRegistration;
 
 use Hanafalah\ModulePatient\Resources\VisitRegistration\ShowVisitRegistration;
 

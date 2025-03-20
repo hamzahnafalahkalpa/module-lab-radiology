@@ -1,11 +1,11 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Schemas;
+namespace Hanafalah\ModuleLabRadiology\Schemas;
 
 use Hanafalah\ModuleMedicService\Enums\MedicServiceFlag;
-use Gilanggustina\ModuleLabRadiology\Contracts\LabVisitRegistration as ContractsLabVisitRegistration;
-use Gilanggustina\ModuleLabRadiology\Resources\LabVisitRegistration\ShowLabVisitRegistration;
-use Gilanggustina\ModuleLabRadiology\Resources\LabVisitRegistration\ViewLabVisitRegistration;
+use Hanafalah\ModuleLabRadiology\Contracts\LabVisitRegistration as ContractsLabVisitRegistration;
+use Hanafalah\ModuleLabRadiology\Resources\LabVisitRegistration\ShowLabVisitRegistration;
+use Hanafalah\ModuleLabRadiology\Resources\LabVisitRegistration\ViewLabVisitRegistration;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Hanafalah\ModulePatient\Schemas\VisitRegistration;

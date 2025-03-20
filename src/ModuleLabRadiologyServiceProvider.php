@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Gilanggustina\ModuleLabRadiology;
+namespace Hanafalah\ModuleLabRadiology;
 
 use Hanafalah\LaravelSupport\Providers\BaseServiceProvider;
-use Gilanggustina\ModuleLabRadiology\Schemas\{
+use Hanafalah\ModuleLabRadiology\Schemas\{
     Laboratorium,
     Radiology,
     Sampling,

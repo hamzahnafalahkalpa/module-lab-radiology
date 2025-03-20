@@ -1,13 +1,13 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Models\LabRadiology;
+namespace Hanafalah\ModuleLabRadiology\Models\LabRadiology;
 
 use Hanafalah\ModuleService\Concerns\HasServiceItem;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Hanafalah\LaravelHasProps\Concerns\HasProps;
 use Hanafalah\LaravelSupport\Models\BaseModel;
-use Gilanggustina\ModuleTreatment\Concerns\HasTreatment;
-use Gilanggustina\ModuleLabRadiology\Enums\LabRadiology\Status;
+use Hanafalah\ModuleTreatment\Concerns\HasTreatment;
+use Hanafalah\ModuleLabRadiology\Enums\LabRadiology\Status;
 
 class LabRadiology extends BaseModel
 {

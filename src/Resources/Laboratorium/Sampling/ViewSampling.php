@@ -1,6 +1,6 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Resources\Laboratorium\Sampling;
+namespace Hanafalah\ModuleLabRadiology\Resources\Laboratorium\Sampling;
 
 use Hanafalah\LaravelSupport\Resources\ApiResource;
 

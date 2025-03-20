@@ -1,8 +1,9 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Enums\LabRadiology;
+namespace Hanafalah\ModuleLabRadiology\Enums\LabRadiology;
 
-enum Status: string{
+enum Status: string
+{
     case DRAFT    = 'DRAFT';
     case ACTIVE   = 'ACTIVE';
     case INACTIVE = 'INACTIVE';

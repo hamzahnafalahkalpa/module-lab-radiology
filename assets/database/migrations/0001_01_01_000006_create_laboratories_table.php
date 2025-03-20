@@ -3,8 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Gilanggustina\ModuleLabRadiology\Enums\LabRadiology\Status;
-use Gilanggustina\ModuleLabRadiology\Models\LabRadiology\Laboratorium\Laboratorium;
+use Hanafalah\ModuleLabRadiology\Enums\LabRadiology\Status;
+use Hanafalah\ModuleLabRadiology\Models\LabRadiology\Laboratorium\Laboratorium;
 
 return new class extends Migration
 {

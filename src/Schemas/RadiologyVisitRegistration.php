@@ -1,10 +1,10 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Schemas;
+namespace Hanafalah\ModuleLabRadiology\Schemas;
 
 use Hanafalah\ModuleMedicService\Enums\MedicServiceFlag;
-use Gilanggustina\ModuleLabRadiology\Contracts\RadiologyVisitRegistration as ContractsRadiologyVisitRegistration;
-use Gilanggustina\ModuleLabRadiology\Resources\RadiologyVisitRegistration\{
+use Hanafalah\ModuleLabRadiology\Contracts\RadiologyVisitRegistration as ContractsRadiologyVisitRegistration;
+use Hanafalah\ModuleLabRadiology\Resources\RadiologyVisitRegistration\{
     ShowRadiologyVisitRegistration,
     ViewRadiologyVisitRegistration
 };

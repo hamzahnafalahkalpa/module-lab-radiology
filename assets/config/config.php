@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-use Gilanggustina\ModuleLabRadiology\{
+use Hanafalah\ModuleLabRadiology\{
     Models as ModuleLabRadiologyModels,
     Commands as ModuleLabRadiologyCommands,
     Contracts

@@ -1,9 +1,7 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology;
+namespace Hanafalah\ModuleLabRadiology;
 
-use Gilanggustina\ModuleLabRadiology\Supports\BaseModuleLabRadiology;
+use Hanafalah\ModuleLabRadiology\Supports\BaseModuleLabRadiology;
 
-class ModuleLabRadiology extends BaseModuleLabRadiology implements Contracts\ModuleLabRadiology{
-
-}
+class ModuleLabRadiology extends BaseModuleLabRadiology implements Contracts\ModuleLabRadiology {}

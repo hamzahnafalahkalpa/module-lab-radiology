@@ -1,7 +1,7 @@
 <?php
 
-use Gilanggustina\ModuleLabRadiology\Models\LabRadiology\Radiology\Radiology;
-use Gilanggustina\ModuleLabRadiology\Enums\LabRadiology\Status;
+use Hanafalah\ModuleLabRadiology\Models\LabRadiology\Radiology\Radiology;
+use Hanafalah\ModuleLabRadiology\Enums\LabRadiology\Status;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

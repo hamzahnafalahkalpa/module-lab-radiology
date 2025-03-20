@@ -1,6 +1,6 @@
 <?php
 
-use Gilanggustina\ModuleLabRadiology\Models\LabRadiology\Laboratorium\{
+use Hanafalah\ModuleLabRadiology\Models\LabRadiology\Laboratorium\{
     Sampling\SamplingLaboratory,
     Sampling\Sampling,
     Laboratorium

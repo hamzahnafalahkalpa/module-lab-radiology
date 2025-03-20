@@ -1,6 +1,6 @@
 <?php
 
-use Gilanggustina\ModuleLabRadiology\Models\LabRadiology\Laboratorium\Sampling\Sampling;
+use Hanafalah\ModuleLabRadiology\Models\LabRadiology\Laboratorium\Sampling\Sampling;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;

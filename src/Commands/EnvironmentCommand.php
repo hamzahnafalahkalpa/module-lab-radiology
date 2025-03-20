@@ -1,6 +1,6 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Commands;
+namespace Hanafalah\ModuleLabRadiology\Commands;
 
 use Hanafalah\LaravelSupport\{
     Commands\BaseCommand

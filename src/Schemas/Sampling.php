@@ -1,8 +1,8 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Schemas;
+namespace Hanafalah\ModuleLabRadiology\Schemas;
 
-use Gilanggustina\ModuleLabRadiology\Contracts;
+use Hanafalah\ModuleLabRadiology\Contracts;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Hanafalah\LaravelSupport\Supports\PackageManagement;

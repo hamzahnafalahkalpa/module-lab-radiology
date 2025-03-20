@@ -1,6 +1,6 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Contracts;
+namespace Hanafalah\ModuleLabRadiology\Contracts;
 
 use Hanafalah\LaravelSupport\Contracts\DataManagement;
 

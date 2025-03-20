@@ -1,6 +1,6 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Models\LabRadiology\Laboratorium\Sampling;
+namespace Hanafalah\ModuleLabRadiology\Models\LabRadiology\Laboratorium\Sampling;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Hanafalah\LaravelHasProps\Concerns\HasProps;

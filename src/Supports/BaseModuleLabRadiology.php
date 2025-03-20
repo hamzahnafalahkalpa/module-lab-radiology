@@ -1,6 +1,6 @@
 <?php
 
-namespace Gilanggustina\ModuleLabRadiology\Supports;
+namespace Hanafalah\ModuleLabRadiology\Supports;
 
 use Hanafalah\LaravelSupport\Supports\PackageManagement;
 
