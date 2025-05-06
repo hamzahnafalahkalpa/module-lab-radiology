@@ -3,7 +3,7 @@
 namespace Hanafalah\ModuleLabRadiology\Contracts;
 
 use Illuminate\Contracts\Database\Eloquent\Builder;
-use Hanafalah\LaravelSupport\Contracts\DataManagement;
+use Hanafalah\LaravelSupport\Contracts\Supports\DataManagement;
 
 interface Sampling extends DataManagement
 {
