@@ -2,7 +2,7 @@
 
 namespace Hanafalah\ModuleLabRadiology\Schemas;
 
-use Hanafalah\ModuleMedicService\Enums\MedicServiceFlag;
+use Hanafalah\ModuleMedicService\Enums\Label;
 use Hanafalah\ModuleLabRadiology\Contracts\LabVisitRegistration as ContractsLabVisitRegistration;
 use Hanafalah\ModuleLabRadiology\Resources\LabVisitRegistration\ShowLabVisitRegistration;
 use Hanafalah\ModuleLabRadiology\Resources\LabVisitRegistration\ViewLabVisitRegistration;
@@ -31,7 +31,7 @@ class LabVisitRegistration extends VisitRegistration implements ContractsLabVisi
     public function prepareStoreRadiologyVisitRegistration(?array $attributes = null): Model
     {
         request()->merge([
-            'medic_service_id' => $this->getMedicService(MedicServiceFlag::LABORATORY->value)->getKey()
+            'medic_service_id' => $this->getMedicService(Label::LABORATORY->value)->getKey()
         ]);
         $attributes ??= request()->all();
         $visit_registration = parent::prepareStoreVisitRegistration($attributes);
