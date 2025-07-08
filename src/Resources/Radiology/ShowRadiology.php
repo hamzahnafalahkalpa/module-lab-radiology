@@ -2,9 +2,9 @@
 
 namespace Hanafalah\ModuleLabRadiology\Resources\Radiology;
 
-use Hanafalah\ModuleMedicalTreatment\Resources\MedicalTreatment\ViewMedicalTreatment;
+use Hanafalah\ModuleMedicalTreatment\Resources\MedicalTreatment\ShowMedicalTreatment;
 
-class ViewRadiology extends ViewMedicalTreatment
+class ShowRadiology extends ViewRadiology
 {
   /**
    * Transform the resource into an array.
@@ -15,9 +15,9 @@ class ViewRadiology extends ViewMedicalTreatment
   public function toArray(\Illuminate\Http\Request $request): array
   {
     $arr = [
-      'as_label'         => $this->as_label,
     ];
-    $arr = $this->mergeArray(parent::toArray($request),$arr);
+    $show = $this->resolveNow(new ShowMedicalTreatment($this));
+    $arr = $this->mergeArray(parent::toArray($request),$show,$arr);
     return $arr;
   }
 }

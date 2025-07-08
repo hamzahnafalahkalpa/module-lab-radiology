@@ -1,10 +1,10 @@
 <?php
 
-namespace Hanafalah\ModuleLabRadiology\Resources\Radiology;
+namespace Hanafalah\ModuleLabRadiology\Resources\AnatomicalPathology;
 
 use Hanafalah\ModuleMedicalTreatment\Resources\MedicalTreatment\ViewMedicalTreatment;
 
-class ViewRadiology extends ViewMedicalTreatment
+class ViewAnatomicalPathology extends ViewMedicalTreatment
 {
   /**
    * Transform the resource into an array.
@@ -16,6 +16,9 @@ class ViewRadiology extends ViewMedicalTreatment
   {
     $arr = [
       'as_label'         => $this->as_label,
+      'unit_id'          => $this->unit_id,
+      'unit'             => $this->prop_unit,
+      'logical'          => $this->logical
     ];
     $arr = $this->mergeArray(parent::toArray($request),$arr);
     return $arr;

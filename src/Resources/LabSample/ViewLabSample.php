@@ -1,10 +1,10 @@
 <?php
 
-namespace Hanafalah\ModuleLabRadiology\Resources\Radiology;
+namespace Hanafalah\ModuleLabRadiology\Resources\LabSample;
 
-use Hanafalah\ModuleMedicalTreatment\Resources\MedicalTreatment\ViewMedicalTreatment;
+use Hanafalah\LaravelSupport\Resources\ModelHasRelation\ViewModelHasRelation;
 
-class ViewRadiology extends ViewMedicalTreatment
+class ViewLabSample extends ViewModelHasRelation
 {
   /**
    * Transform the resource into an array.
@@ -14,9 +14,7 @@ class ViewRadiology extends ViewMedicalTreatment
    */
   public function toArray(\Illuminate\Http\Request $request): array
   {
-    $arr = [
-      'as_label'         => $this->as_label,
-    ];
+    $arr = [];
     $arr = $this->mergeArray(parent::toArray($request),$arr);
     return $arr;
   }
