@@ -40,10 +40,6 @@ class InstallMakeCommand extends EnvironmentCommand
             '--tag'      => 'migrations'
         ]);
         $this->info('✔️  Created migrations');
-<<<<<<< HEAD
-
-=======
->>>>>>> 016119470b49e1e4d9ab4910a5827eb2c5b6a223
         $this->comment('hanafalah/module-lab-radiology installed successfully.');
     }
 }
