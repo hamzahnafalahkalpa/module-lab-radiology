@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
 class AnatomicalPathology extends LabRadiology implements ContractsAnatomicalPathology
 {
     protected string $__entity = 'AnatomicalPathology';
-    public static $anatomical_pathology_model;
+    public $anatomical_pathology_model;
     //protected mixed $__order_by_created_at = false; //asc, desc, false
 
     protected array $__cache = [
@@ -23,7 +23,7 @@ class AnatomicalPathology extends LabRadiology implements ContractsAnatomicalPat
 
     public function prepareStoreAnatomicalPathology(AnatomicalPathologyData $anatomical_pathology_dto): Model{
         $anatomical_pathology = parent::prepareStoreLabRadiology($anatomical_pathology_dto);
-        return static::$anatomical_pathology_model = $anatomical_pathology;
+        return $this->anatomical_pathology_model = $anatomical_pathology;
     }
 
     public function anatomicalPathology(mixed $conditionals = null): Builder{

@@ -13,7 +13,7 @@ use Hanafalah\ModulePatient\Schemas\VisitRegistration;
 class LabVisitRegistration extends VisitRegistration implements ContractsLabVisitRegistration
 {
     protected string $__entity = 'LabVisitRegistration';
-    public static $lab_visit_model;
+    public $lab_visit_model;
 
     protected array $__resources = [
         'view' => ViewLabVisitRegistration::class,

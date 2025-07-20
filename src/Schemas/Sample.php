@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 class Sample extends ExaminationStuff implements ContractSample
 {
     protected string $__entity = 'Sample';
-    public static $sample_model;
+    public $sample_model;
 
     protected array $__cache = [
         'index' => [
@@ -23,7 +23,7 @@ class Sample extends ExaminationStuff implements ContractSample
 
     public function prepareStoreSample(SampleData $sample_dto): Model{     
         $sample_model = $this->prepareStoreExaminationStuff($sample_dto);       
-        return static::$sample_model = $sample_model;
+        return $this->sample_model = $sample_model;
     }
 
     public function sample(mixed $conditionals = null): Builder{

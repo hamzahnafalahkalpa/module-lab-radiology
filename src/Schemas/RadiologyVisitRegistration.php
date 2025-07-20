@@ -15,7 +15,7 @@ use Hanafalah\ModulePatient\Schemas\VisitRegistration;
 class RadiologyVisitRegistration extends VisitRegistration implements ContractsRadiologyVisitRegistration
 {
     protected string $__entity = 'RadiologyVisitRegistration';
-    public static $radiology_visit_model;
+    public $radiology_visit_model;
 
     protected array $__resources = [
         'view' => ViewRadiologyVisitRegistration::class,

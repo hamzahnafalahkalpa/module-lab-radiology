@@ -9,7 +9,7 @@ use Hanafalah\ModuleLabRadiology\Contracts\Schemas\Radiology as ContractsRadiolo
 class Radiology extends LabRadiology implements ContractsRadiology
 {
     protected string $__entity = 'Radiology';
-    public static $radiology_model;
+    public $radiology_model;
     //protected mixed $__order_by_created_at = false; //asc, desc, false
 
     protected array $__cache = [
@@ -22,6 +22,6 @@ class Radiology extends LabRadiology implements ContractsRadiology
 
     public function prepareStoreRadiology(RadiologyData $radiology_dto): Model{
         $radiology = parent::prepareStoreLabRadiology($radiology_dto);
-        return static::$radiology_model = $radiology;
+        return $this->radiology_model = $radiology;
     }
 }

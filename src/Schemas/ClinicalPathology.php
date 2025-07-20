@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
 class ClinicalPathology extends LabRadiology implements ContractsClinicalPathology
 {
     protected string $__entity = 'ClinicalPathology';
-    public static $clinical_pathology_model;
+    public $clinical_pathology_model;
     //protected mixed $__order_by_created_at = false; //asc, desc, false
 
     protected array $__cache = [
@@ -23,7 +23,7 @@ class ClinicalPathology extends LabRadiology implements ContractsClinicalPatholo
 
     public function prepareStoreClinicalPathology(ClinicalPathologyData $clinical_pathology_dto): Model{
         $clinical_pathology = parent::prepareStoreLabRadiology($clinical_pathology_dto);
-        return static::$clinical_pathology_model = $clinical_pathology;
+        return $this->clinical_pathology_model = $clinical_pathology;
     }
 
     public function clinicalPathology(mixed $conditionals = null): Builder{

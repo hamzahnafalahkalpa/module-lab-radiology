@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 class LabRadiology extends MedicalTreatment implements ContractsLabRadiology
 {
-    public static $lab_radiology;
+    public $lab_radiology;
     //protected mixed $__order_by_created_at = false; //asc, desc, false
 
     protected array $__cache = [
@@ -30,7 +30,7 @@ class LabRadiology extends MedicalTreatment implements ContractsLabRadiology
                 $this->schemaContract('lab_sample')->prepareStoreLabSample($lab_sample_dto);
             }
         }
-        return static::$lab_radiology = $lab_radiology;
+        return $this->lab_radiology = $lab_radiology;
     }
 
     public function labRadiology(mixed $conditionals = null): Builder{

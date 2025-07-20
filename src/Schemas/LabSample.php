@@ -10,7 +10,7 @@ use Hanafalah\ModuleLabRadiology\Contracts\Data\LabSampleData;
 class LabSample extends ModelHasRelation implements ContractsLabSample
 {
     protected string $__entity = 'LabSample';
-    public static $lab_sample_model;
+    public $lab_sample_model;
     //protected mixed $__order_by_created_at = false; //asc, desc, false
 
     protected array $__cache = [
@@ -23,6 +23,6 @@ class LabSample extends ModelHasRelation implements ContractsLabSample
 
     public function prepareStoreLabSample(LabSampleData $lab_sample_dto): Model{
         $lab_sample = parent::prepareStoreModelHasRelation($lab_sample_dto);
-        return static::$lab_sample_model = $lab_sample;
+        return $this->lab_sample_model = $lab_sample;
     }
 }
