@@ -30,14 +30,14 @@ class LabRadiologyData extends MedicalTreatmentData implements DataLabRadiologyD
     public ?array $lab_samples = [];
 
     public static function before(array &$attributes){
-        $attributes['flag'] ??= 'LabRadiology';
+        $attributes['flag'] ??= 'LabRadiology';        
         parent::before($attributes);
     }
 
     public static function after(self $data): self{
         $new   = self::new();
         $props = &$data->props;
-
+        
         if (isset($data->lab_unit)){
             $lab_unit = app(config('app.contracts.LabUnit'))->prepareStoreLabUnit($data->lab_unit);
             $props['lab_unit_id']   = $lab_unit->getKey();

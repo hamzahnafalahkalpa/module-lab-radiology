@@ -7,6 +7,6 @@ use Hanafalah\ModuleLabRadiology\Contracts\Data\LabSampleData as DataLabSampleDa
 
 class LabSampleData extends ModelHasRelationData implements DataLabSampleData{
     public static function before(array &$attributes){
-        $attributes['model_type'] ??= 'LabSample';
+        $attributes['relation_type'] ??= 'Sample';
     }
 }
