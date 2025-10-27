@@ -11,13 +11,6 @@
             "Hanafalah\\ModuleLabRadiology\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Hanafalah\\ModuleLabRadiology\\ModuleLabRadiologyServiceProvider"
-            ]
-        }
-    },
     "authors": [
         {
             "name": "Cahaya Gilang Gustina",
